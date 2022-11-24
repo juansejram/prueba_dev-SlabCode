@@ -1,0 +1,59 @@
+.onboardingContainer{
+    margin-top: 1%;
+    margin-left:5%;
+    width: 90%;
+    height: 30%;
+    position: absolute;
+
+    background-color: white;
+    border-radius: 0.5em;
+
+}
+
+.leftContainer {
+    margin-top: 1.7%;
+    width: 38%;
+    height: 79%;
+
+    border-right: solid #00000012;
+}
+
+.image{
+
+}
+
+.titleContainer {
+    margin-top: 0.5%;
+    width: 38%;
+    height: 100%;
+}
+
+.title{ 
+    margin-top: 50%;
+    margin-left: 60%;
+    width: 50%;
+    height: 79%;
+
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 80%;
+    text-align: left;
+}
+
+.subtitle {
+    position: relative;
+    top: 10%;
+    left: 50%;
+
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 15%;
+    text-align: left;
+}
+
+.rightContainer{
+    margin: auto;
+    width: 60%;
+    height: 100%;
+    
+}
