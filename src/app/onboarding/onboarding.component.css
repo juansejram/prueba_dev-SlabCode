@@ -1,59 +1,64 @@
-.onboardingContainer{
-    margin-top: 1%;
-    margin-left:5%;
-    width: 90%;
-    height: 30%;
-    position: absolute;
+.onboardingContainer {
+  margin-top: 1%;
+  margin-left: 5%;
+  width: 67.5em;
+  height: 13em;
+  position: absolute;
 
-    background-color: white;
-    border-radius: 0.5em;
-
+  background-color: white;
+  border-radius: 0.5em;
+  box-shadow: 0em 0 0.4em #00000012, 0em 0 0.4em #00000012;
 }
 
-.leftContainer {
-    margin-top: 1.7%;
-    width: 38%;
-    height: 79%;
+.square {
+  margin-top: 5.5%;
+  margin-left: 5%;
+  width: 5em;           
+  height: 5em;      
 
-    border-right: solid #00000012;
+  background: no-repeat url('../../assets/delCampo.png');
+  background-size: contain;
+  background-position: center;
+  border-radius: 0.5em;
+  box-shadow: 0em 0 0.4em #00000012, 0em 0 0.4em #00000012; 
 }
 
-.image{
+.title {
+  margin-top: -6.5%;
+  margin-left: 16%;
+  width: 15em;
+  height: auto;
 
+  font-family: 'OpenSansSemiBold';
+  font-size: 80%;
 }
 
-.titleContainer {
-    margin-top: 0.5%;
-    width: 38%;
-    height: 100%;
+#subtitle {
+  font-family: 'OpenSans';
+  font-size: 11px;
 }
 
-.title{ 
-    margin-top: 50%;
-    margin-left: 60%;
-    width: 50%;
-    height: 79%;
-
-    font-family: sans-serif;
-    font-weight: 600;
-    font-size: 80%;
-    text-align: left;
+#link {
+  font-family: 'OpenSans';
+  font-size: 11px;
 }
 
-.subtitle {
-    position: relative;
-    top: 10%;
-    left: 50%;
+.right {
+  margin-top: -9.5%;
+  margin-left: 40%;
+  width: 50em;           
+  height: 15em;
 
-    font-family: sans-serif;
-    font-weight: 600;
-    font-size: 15%;
-    text-align: left;
+  font-family: 'OpenSans';
+  font-size: 12px;
 }
 
-.rightContainer{
-    margin: auto;
-    width: 60%;
-    height: 100%;
-    
+.bar {
+  font-family: 'OpenSansBold'; 
 }
+/* .createProduct {
+  margin-left: 0.5%;
+  margin-top: 0.5%;  
+  width: 0.5em;
+  height: 0.5em;
+} */

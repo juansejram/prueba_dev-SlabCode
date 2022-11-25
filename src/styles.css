@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: OpenSans;
+    src: url('assets/OpenSans/OpenSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: OpenSansSemibold;
+    src: url('assets/OpenSans/OpenSans-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: OpenSansbold;
+    src: url('assets/OpenSans/OpenSans-Bold.ttf');
+}

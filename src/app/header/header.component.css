@@ -49,7 +49,7 @@ input::placeholder {
 
   color: #7d8687;
   opacity: 1;
-  font-family: url("../../assets/fonts/static/OpenSans/OpenSans-Regular.ttf");
+  font-family: url("/assets/OpenSans-Regular.ttf");
   font-size: 100%;
 }
 
