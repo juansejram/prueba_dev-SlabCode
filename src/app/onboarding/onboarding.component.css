@@ -1,7 +1,7 @@
 .onboardingContainer {
   margin-top: 1%;
   margin-left: 5%;
-  width: 67.5em;
+  width: 90%;
   height: 13em;
   position: absolute;
 
@@ -11,7 +11,7 @@
 }
 
 .square {
-  margin-top: 5.5%;
+  margin-top: 4%;
   margin-left: 5%;
   width: 5em;           
   height: 5em;      
@@ -24,13 +24,13 @@
 }
 
 .title {
-  margin-top: -6.5%;
+  margin-top: -5.5em;
   margin-left: 16%;
   width: 15em;
   height: auto;
 
   font-family: 'OpenSansSemiBold';
-  font-size: 80%;
+  font-size: 12px;
 }
 
 #subtitle {
@@ -44,21 +44,189 @@
 }
 
 .right {
-  margin-top: -9.5%;
-  margin-left: 40%;
-  width: 50em;           
-  height: 15em;
+  margin-top: -6.5%;
+  margin-left: 35%;
+  width: 80em;           
+  height: 13em;
 
   font-family: 'OpenSans';
   font-size: 12px;
+  display: flex;
+  flex-direction: row;
+  border-left: solid;
+  border-left-color: #EBEDED;
+  border-left-width: thin;
 }
 
 .bar {
-  font-family: 'OpenSansBold'; 
+  margin-top: 0px;
+  margin-left: 8em;
+  width: 30em;
+  height: 4em;
+
+  font-family: 'OpenSansBold';
+  display:flex;
+  flex-direction: row;
 }
-/* .createProduct {
-  margin-left: 0.5%;
-  margin-top: 0.5%;  
-  width: 0.5em;
-  height: 0.5em;
-} */
+
+.progress {
+  margin-top: -9.5em;
+  margin-left: 55%; 
+  width: 42%;
+  height: 5%;
+
+  background-color: #F5F5F5;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+}
+
+.animated-progress span {
+  height: 100%;
+  display: block;
+  width: 0;
+
+  color: rgb(255, 251, 251);
+  line-height: 30px;
+  position: absolute;
+  text-align: end;
+  padding-right: 30%;
+  border-radius: 8px;
+}
+
+.progress-blue span {
+  background-color: #005CAB;
+}
+
+#b {
+  margin-top: 4%;
+  margin-left: -30em;
+  width: 20em;           
+  height: 10em;
+}
+
+#c {
+  margin-top: 4%;
+  margin-left: 15%;
+  width: 20em;           
+  height: 10em;
+}
+
+.newProduct {
+  height: 15px;
+  width: 15px;
+  margin-right: 3%;
+
+  background: url(../../assets/newProduct.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  display: inline-block;
+  
+}
+.createProduct{
+  cursor: pointer;
+}
+
+.gps span {
+  height: 15px;
+  width: 15px;
+  margin-right: 3%;
+
+  background: url(../../assets/gps.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  display: inline-block;
+}
+
+.card span {
+  height: 15px;
+  width: 15px;
+  margin-right: 4%;
+
+  background: url(../../assets/creditcard.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  display: inline-block;
+}
+.domain span {
+  height: 15px;
+  width: 15px;
+  margin-right: 4%;
+
+  background: url(../../assets/world.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  display: inline-block;
+}
+
+.defineLogo {
+  color: #969798;
+}
+
+.defineLogo span {
+  height: 15px;
+  width: 15px;
+  margin-right: 3%;
+
+  background: url(../../assets/logoandcolors.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  display: inline-block;
+}
+
+.check {
+  height: 16px;
+  width: 16px;
+  margin-left: 10%;
+
+  background: url(../../assets/check.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  display: inline-block;
+}
+
+.gift span {
+  height: 15px;
+  width: 15px;
+  margin-right: 3%;
+
+  background: url(../../assets/gift.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  display: inline-block;
+}
+
+.gift {
+  color: #969798;
+}
+
+.campaign span {
+  height: 15px;
+  width: 15px;
+  margin-right: 3%;
+
+  background: url(../../assets/megaphone.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  display: inline-block;
+}
+
+.completeDocuments span {
+  height: 15px;
+  width: 15px;
+  margin-right: 3%;
+
+  background: url(../../assets/documents.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  display: inline-block;
+}

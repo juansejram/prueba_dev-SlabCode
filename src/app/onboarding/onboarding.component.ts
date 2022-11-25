@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Product } from '../interfaces/product_description.model';
 import { DataService } from '../services/data.service';
+import { MatDialog } from '@angular/material/dialog';
+import { ProductDialogComponent } from '../product-dialog/product-dialog.component';
 
 @Component({
   selector: 'app-onboarding',
@@ -10,7 +12,7 @@ import { DataService } from '../services/data.service';
 export class OnboardingComponent implements OnInit {
   //product1 = new Product('Adidas', 'Adidas Superstar', 100);
 
-  constructor(public dataService: DataService) { }
+  constructor(public dataService: DataService, private matDialog:MatDialog) { }
 
   ngOnInit(): void {
     this.showProducts();
@@ -29,5 +31,9 @@ export class OnboardingComponent implements OnInit {
         product => console.log(product),
         error => console.log(error)
       )
+  }
+
+  openCreateProduct(){
+    this.matDialog.open(ProductDialogComponent);
   }
 }

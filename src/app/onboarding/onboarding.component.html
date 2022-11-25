@@ -7,19 +7,25 @@
   </div>
   <div class="right">
     <div class="bar">
-      <a class="completeAccount"> Completa tu Cuenta (OJO/8)</a>
+      <a class="completeAccount"> Completa tu Cuenta (2/8)</a>
     </div>
     <div id="b">
-      <a class="createProduct">Crear producto</a><br>
-      <a class="gps">Definir cobertura envíos</a><br>
-      <a class="card">Agregar método de pago</a><br>
-      <a class="domain">Establecer dominio</a>
+      <a class="createProduct" (click)="openCreateProduct()" type="button">
+        <span class="newProduct"> </span> Crear producto</a><br/><br/>
+      <a class="gps"> <span></span> Definir cobertura envíos</a><br/><br/>
+      <a class="card"> <span></span>Agregar método de pago</a><br/><br/>
+      <a class="domain"> <span></span>Establecer dominio</a>
     </div>
     <div id="c">
-      <a class="defineLogo">Definir logo y colores</a><br>
-      <a class="">Personalizar plantilla</a><br>
-      <a class="campaign">Activar campañas</a><br>
-      <a class="completeDocuments">Completar documentos</a>
+      <a class="defineLogo"> <span></span> Definir logo y colores</a> <span class="check"></span><br/><br/>
+      <a class="gift"> <span></span> Personalizar plantilla</a> <span class="check"></span><br/><br/>
+      <a class="campaign"><span></span> Activar campañas</a><br/><br/>
+      <a class="completeDocuments"> <span></span> Completar documentos</a>
+    </div>
+  </div>
+  <div class="progress">
+    <div class="animated-progress progress-blue">
+      <span data-progress="45"></span>
     </div>
   </div>
 </div>

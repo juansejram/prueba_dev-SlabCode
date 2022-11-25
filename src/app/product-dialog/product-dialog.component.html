@@ -1,0 +1,18 @@
+<div class="productDialog">
+  <h1 mat-dialog-title>Crear Producto</h1>
+  <div mat-dialog-content>
+    <h4>Informacion del producto</h4>
+    <form action="">
+        <p>Nombre del Producto</p>
+        <input type="text" [(ngModel)]="productName" name="productName" *ngIf="!nameValidationError">
+        <input type="text" class="errorName" name="errorName" placeholder="Nombre no puede ir vacío." [(ngModel)]="productName" *ngIf="nameValidationError" [ngStyle]="{'border-color':'red'}">
+        <p>Descripción</p>
+        <input type="text" [(ngModel)]="productSpecification" name="productSpecification">
+        <p>Precio</p>
+        <input type="number" [(ngModel)]="productPrice" name="number">
+    </form>
+    <button (click)="closeDialog()">Cancelar</button>
+    <button (click)="saveData()">Guardar</button>
+  </div>
+</div>
+
