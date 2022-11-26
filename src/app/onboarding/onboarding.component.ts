@@ -11,6 +11,7 @@ import { ProductDialogComponent } from '../product-dialog/product-dialog.compone
 })
 export class OnboardingComponent implements OnInit {
   //product1 = new Product('Adidas', 'Adidas Superstar', 100);
+  showCheck:boolean = false;
 
   constructor(public dataService: DataService, private matDialog:MatDialog) { }
 

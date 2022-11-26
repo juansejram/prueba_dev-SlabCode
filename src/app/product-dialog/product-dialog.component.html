@@ -1,18 +1,26 @@
 <div class="productDialog">
+  <span class="close" (click)="closeDialog()"></span>
   <h1 mat-dialog-title>Crear Producto</h1>
-  <div mat-dialog-content>
+  <div mat-dialog-content class="formContainer">
     <h4>Informacion del producto</h4>
-    <form action="">
+    <form class="forms">
         <p>Nombre del Producto</p>
-        <input type="text" [(ngModel)]="productName" name="productName" *ngIf="!nameValidationError">
-        <input type="text" class="errorName" name="errorName" placeholder="Nombre no puede ir vacío." [(ngModel)]="productName" *ngIf="nameValidationError" [ngStyle]="{'border-color':'red'}">
+        <input type="text" [(ngModel)]="productName" class="forma" name="productName" *ngIf="!nameValidationError">
+        <input type="text" class="forma" name="errorName" placeholder="Escribe el nombre" 
+        [(ngModel)]="productName" *ngIf="nameValidationError" [ngStyle]="{'border-color':'red'}"><br>
         <p>Descripción</p>
-        <input type="text" [(ngModel)]="productSpecification" name="productSpecification">
+        <input type="text" [(ngModel)]="productSpecification" class="forma" 
+        name="productSpecification" *ngIf="!specificationValidationError">
+        <input type="text" [(ngModel)]="productSpecification" name="errorSpecification" class="forma" 
+        placeholder="Escribe la Descripción" *ngIf="specificationValidationError" [ngStyle]="{'border-color':'red'}">
         <p>Precio</p>
-        <input type="number" [(ngModel)]="productPrice" name="number">
+        <input type="number" [(ngModel)]="productPrice" class="forma" name="number" *ngIf="!priceValidationError">
+        <input type="number" [(ngModel)]="productPrice" class="forma"
+        name="errorPrice" *ngIf="priceValidationError" placeholder="El precio no puede ser de valor negativo" [ngStyle]="{'border-color':'red'}">
     </form>
-    <button (click)="closeDialog()">Cancelar</button>
-    <button (click)="saveData()">Guardar</button>
+    <div class="buttons"></div>
+    <a class="closeDialog" (click)="closeDialog()" style="color: #1b529e;">CANCELAR</a>
+    <a class="save" (click)="saveData()" style="color: white;">GUARDAR</a>
   </div>
 </div>
 

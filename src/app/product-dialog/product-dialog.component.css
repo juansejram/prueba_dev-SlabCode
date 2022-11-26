@@ -1,4 +1,85 @@
-.errorName::placeholder{
-    color: red;
-    
+.productDialog {
+  width: 40em;
+  height: 500px;
+
+  font-family: "OpenSans";
+}
+
+.close {
+  width: 1em;
+  height: 1em;
+  margin-left: 95%;
+
+  background-image: url("../../assets/close.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  display: inline-block;
+}
+h1 {
+  font-family: "OpenSansBold";
+  text-align: center;
+}
+
+.formContainer {
+  height: 90%;
+  width: 80%;
+  padding-left: 0px;
+  margin-left: 50px;
+}
+
+h4 {
+  font-family: "OpenSansBold";
+}
+
+.forms {
+  margin-top: 8%;
+}
+
+.forma {
+  margin-top: -5%;
+  height: 30px;
+  width: 100%;
+
+  border-radius: 5px;
+  border-color: #dddfdf;
+}
+
+.buttons {
+  margin-top: 0px;
+  height: 4em;
+  width: 100%;
+
+  display: inline-block;
+}
+
+.closeDialog {
+  width: 13em;
+  height: 3em;
+  margin-top: 10em;
+  margin-left: 37%;
+
+  font-family: "OpenSansBold";
+  font-style: color #1b529e;
+  cursor: pointer;
+}
+
+.save {
+  margin-bottom: 50%;
+  margin-left: 20%;
+  padding: 1em 2em;
+  width: 13em;
+  height: 3em;
+
+  border-radius: 5px;
+  background-color: #1b529e;
+  background-position: center;
+  background-size: 13em 6em;
+  font-family: "OpenSansBold";
+  outline: none;
+  cursor: pointer;
+}
+
+.forma::placeholder {
+  color: red;
 }

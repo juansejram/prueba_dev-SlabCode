@@ -1,29 +1,20 @@
 .footer {
-  position: absolute;
-  width: 100%;
-  height: 2em;
+  position: fixed;
+  left: 0;
   bottom: 0;
   width: 100%;
-  display: flex;
   background-color: #ffffff;
-  justify-content: space-between;
+  height: 2em;
 }
 
-#left {
-  margin-top: 0.25%;
-  margin-left: 3%;
-  width: 50%;
-  height: 3%;
-
-  font: normal normal normal 10px/20px 'Open Sans';
+#left{
+  float: left;
+  margin: 0.5em 3em 3em 5em;
+  font: normal normal normal 12px/20px 'OpenSans';
 }
 
-#right {
-  margin-top: 0.25%;
-  padding-left: 65%;
-  width: 50%;
-  height: 3%;
-  display: flex;
-
-  font-family: 'OpenSans';
+#right{
+  float: right;
+  margin: 0.5em 5em 3em 3em;
+  font: normal normal normal 12px/20px 'OpenSans';
 }

@@ -13,6 +13,9 @@ export class ProductDialogComponent implements OnInit {
   productSpecification:string = '';
   productPrice:number = 0;
   nameValidationError:boolean = false;
+  specificationValidationError:boolean = false;
+  priceValidationError:boolean = false;
+
 
   constructor(private matDialog:MatDialog, private dataService:DataService) { }
 
@@ -24,23 +27,36 @@ export class ProductDialogComponent implements OnInit {
   }
 
   formValidations(product:Product){
-    var correct = true;
-    if (product.productName==''){
-      this.nameValidationError = true;
+    let correct:boolean = true;
+
+    if (product.productName == '' || product.productSpecification == '' || product.productPrice < 0) {
+      if (product.productName == ''){
+        this.nameValidationError = true;
+      }
+      if (product.productSpecification == ''){
+        this.specificationValidationError = true;
+      }
+      if (product.productPrice < 0){
+        this.priceValidationError = true;
+      }      
       correct = false;
     }
     return correct;
   }
+  
   saveData(){
-    var productAdd = new Product(this.productName, this.productSpecification, this.productPrice);
-    var correct = this.formValidations(productAdd);
-    if(correct)
-    {
+    let productAdd = new Product(this.productName, this.productSpecification, this.productPrice);
+    let correct = this.formValidations(productAdd);
+
+    if (correct) {
       this.dataService.createProduct(productAdd)
       .subscribe(
         product => console.log(product),
         error => console.log(error)
       )
+      this.matDialog.closeAll();
+      correct = true;
     }
   }
+
 }

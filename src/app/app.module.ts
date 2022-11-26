@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { OnboardingComponent } from './onboarding/onboarding.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import {  HttpClientModule } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ProductDialogComponent } from './product-dialog/product-dialog.component';
 
