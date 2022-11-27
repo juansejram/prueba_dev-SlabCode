@@ -12,6 +12,7 @@ import { ProductDialogComponent } from '../product-dialog/product-dialog.compone
 export class OnboardingComponent implements OnInit {
   //product1 = new Product('Adidas', 'Adidas Superstar', 100);
   showCheck:boolean = false;
+  hideChildComponent:boolean = false;
 
   constructor(public dataService: DataService, private matDialog:MatDialog) { }
 
@@ -36,5 +37,14 @@ export class OnboardingComponent implements OnInit {
 
   openCreateProduct(){
     this.matDialog.open(ProductDialogComponent);
+  }
+
+  checkOn(check:boolean){
+    if (check){
+      this.showCheck = true;
+      console.log(check)
+      console.log(this.showCheck)
+    }
+    else {this.showCheck = false}
   }
 }

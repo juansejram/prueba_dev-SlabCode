@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { Product } from '../interfaces/product_description.model';
 import { DataService } from '../services/data.service';
@@ -16,7 +16,8 @@ export class ProductDialogComponent implements OnInit {
   specificationValidationError:boolean = false;
   priceValidationError:boolean = false;
 
-
+  @Output() checkEvent = new EventEmitter<boolean>();
+  
   constructor(private matDialog:MatDialog, private dataService:DataService) { }
 
   ngOnInit(): void {
@@ -43,10 +44,11 @@ export class ProductDialogComponent implements OnInit {
     }
     return correct;
   }
-  
+
   saveData(){
     let productAdd = new Product(this.productName, this.productSpecification, this.productPrice);
     let correct = this.formValidations(productAdd);
+    let check = true;
 
     if (correct) {
       this.dataService.createProduct(productAdd)
@@ -54,9 +56,9 @@ export class ProductDialogComponent implements OnInit {
         product => console.log(product),
         error => console.log(error)
       )
+      this.checkEvent.emit(check);
       this.matDialog.closeAll();
-      correct = true;
+      alert('Producto guardado satisfactoriamente');
     }
   }
-
 }
